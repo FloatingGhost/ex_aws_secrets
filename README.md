@@ -12,6 +12,7 @@ ExAws.Secrets.list_secrets()
 ExAws.Secrets.get_secret_value("mysecret")
 |> ExAws.request!()
 %{"SecretString" => "abcd"}
+```
 
 ## Installation
 
