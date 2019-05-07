@@ -1,6 +1,17 @@
 # Secrets
 
-**TODO: Add description**
+Very basic [ExAws](https://github.com/ex-aws/ex_aws) client for AWS secretsmanager
+
+## Usage
+
+```elixir
+ExAws.Secrets.list_secrets()
+|> ExAws.request!()
+%{"SecretList"=> %{...}}
+
+ExAws.Secrets.get_secret_value("mysecret")
+|> ExAws.request!()
+%{"SecretString" => "abcd"}
 
 ## Installation
 
